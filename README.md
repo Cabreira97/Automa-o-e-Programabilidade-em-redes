@@ -38,6 +38,29 @@ O servidor registra todas as interações no arquivo de log, incluindo conexões
 ### 5. **Multi-threading**
 O servidor é projetado para lidar com múltiplas conexões simultâneas. Para isso, ele utiliza threads para processar cada cliente em paralelo, garantindo que o servidor não fique bloqueado por uma única conexão.
 
+### 6. **Como Executar o Projeto**
+
+Para executar o sistema de comunicação TCP/UDP, siga os passos abaixo:
+
+#### 1. **Configuração Inicial**
+- Certifique-se de que o arquivo `usuarios.txt` esteja localizado na raiz do projeto. Esse arquivo deve conter as credenciais dos usuários no formato: `usuario1,senha123`.
+- Se necessário, instale as dependências do projeto com o seguinte comando (se estiver utilizando Python):
+  ```bash
+  pip install -r requirements.txt
+
+##### 2. **Executando o Servidor**
+
+- Navegue até o diretório onde o arquivo do servidor está localizado.
+- Execute o servidor com o comando:
+  ```bash
+  python server.py
+
+##### 2. **Executando o Cliente**
+
+- Navegue até o diretório onde o arquivo do cliente está localizado..
+- Execute o cliente com o comando::
+  ```bash
+  python client.py
 ## Conclusão
 
 O sistema de comunicação TCP/UDP desenvolvido oferece uma solução robusta para interações cliente-servidor, com suporte a comandos simples como data, uptime e chat. A utilização de multi-threading permite que o servidor gerencie várias conexões simultaneamente, enquanto o uso de TCP garante uma comunicação estável e confiável, e o UDP oferece uma alternativa mais rápida e eficiente para mensagens simples. O registro de logs facilita o monitoramento das atividades do servidor, e o código pode ser expandido para incluir novas funcionalidades conforme necessário. O cliente, por sua vez, oferece uma interface amigável para o usuário, permitindo interações intuitivas com o servidor.
